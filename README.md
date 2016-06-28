@@ -1,2 +1,2 @@
 # DSSG2016-Sidewalks
-Open Sidewalks Project Repo
+Docker file(s) for running software related to our project.

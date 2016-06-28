@@ -1,0 +1,15 @@
+cartodb:
+  image: sverhoeven/cartodb
+  ports:
+    - "3000:3000"
+    - "8080:8080"
+    - "8181:8181"
+  volumes:
+    - cartodb_db:/var/lib/postgresql/9.3/
+
+cartdb-proxy:
+  image: spawnthink/cartodb-nginx
+  ports:
+    - "80:80"
+  links:
+    - cartodb:cartodb.localhost
