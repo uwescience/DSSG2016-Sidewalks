@@ -24,3 +24,27 @@ In our docker-compose.yml file there is a 'volumes' section defined. This tells
 docker to keep a persistent volume to store our database, mapping the
 container's `/var/lib/postgres/9.3` (the postgres database) to docker's storage
 location, in our case `/var/lib/docker/volumes/cartodb_db/_data`.
+
+### Scripts
+
+#### Creating new users
+
+As of writing (2016-06-30), there is no way to create a new user from the web
+frontend. Instead, you must run a script *within* the cartodb docker container.
+
+You can run the script in a two-step process (update this if you find a better
+way):
+
+1) Copy it to the running container using `docker cp script/create_dev_user
+cartodb_cartodb_1:/`. Make sure the last argument (`cartodb_cartodb_1`) is the
+true name of the running container.
+2) Run it using `docker exec -i -t sh /create_dev_user`.
+
+The `script/create_dev_user` shell script creates a new 'dev-level' user. This
+is taken directly from the CartoDB master branch as of 2016-06-30, and would
+normally be included in the docker instance, but the version cloned + installed
+is too old and is only good for creating a single user named 'dev'. This one
+will prompt for two things:
+
+1) A 'hostname'. This is your username.
+2) A password. This is your password.

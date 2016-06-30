@@ -7,7 +7,7 @@ cartodb:
   volumes:
     - cartodb_db:/var/lib/postgresql/9.3/
 
-cartdb-proxy:
+cartodb-proxy:
   image: spawnthink/cartodb-nginx
   ports:
     - "80:80"
