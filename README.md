@@ -1,2 +1,8 @@
 # DSSG2016-Sidewalks
-Docker file(s) for running software related to our project.
+
+Open Sidewalks Project Repo
+
+Project website: (https://uwescience.github.io/DSSG2016-Sidewalks/)
+
+Includes docker file(s) for running software related to our project.
+
