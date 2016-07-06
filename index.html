@@ -41,38 +41,91 @@
 				</div>
 			</section>
 
-		<!-- One -->
+		<!-- Vision -->
 			<section id="one" class="wrapper style1">
 				<div class="container margin-bottom-40">
 					<header class="major">
 						<h2>Vision</h2>
-						<p>Sidewalks provide a primary mode of travel that supports nearly all other travel options, leisure, recreation and community activities. This project seeks to make pedestrian ways, particularly sidewalks, first class members of an open data transportation network. The <a href="https://www.openstreetmap.org/">OpenStreetMap</a> (OSM) project has made available extensive, user-contributed open data on transportation networks, providing the basis for many use cases and downstream activities, including rich analytics, travel route optimization, city planning, and disaster relief. However, footpaths in the built environment have generally been treated an addendum to streets.</p>
-						
-<p>As a result, sidewalks in OSM have spotty coverage, an unintuitive implementation that makes user contribution difficult, and fail to serve many use cases, including the needs of people with limited mobility. This project proposes to jumpstart an effort to generate an OSM-based pedestrian network with global coverage.</p>						
-					<img src="images/Open-Sidewalks.png" alt="OpenSidewalks Diagram" width="500" style="margin-bottom:60px"/>	</header>
-					
-					
+						<p>Sidewalks provide a primary mode of travel that supports nearly all other travel options, leisure, recreation and community activities. This project seeks to make <a href="#terms">pedestrian ways</a>, particularly sidewalks, first class members of an open data transportation network. The <a href="https://www.openstreetmap.org/">OpenStreetMap</a> (OSM) project has made available extensive, user-contributed open data on transportation networks, providing the basis for many use cases and downstream activities, including rich analytics, travel route optimization, city planning, and disaster relief.  Some footways have been annotated in OSM as independent routes.  However, sidewalks in the built environment have generally been treated an addendum to streets.</p>  
+
+						<p>As a result, sidewalks in OSM have spotty coverage and an unintuitive implementation.  The current standard makes user contribution difficult and fails to serve many use cases, including the needs of people with limited mobility. This project proposes to jumpstart an effort to generate an OSM-based pedestrian network with global coverage.</p>  					
+					<img src="images/Open-Sidewalks.png" alt="OpenSidewalks Diagram" width="500" style="margin-bottom:60px"/>	</header>			
 				</div>
 			</section>
 			
-		<!-- Two -->
+		<!-- Objectives -->
 			<section id="two" class="wrapper style2">
 				<div class="container">
 						<header class="major">
 						<h2>Objectives</h2></header>
 						<div class="row uniform">
 <ol>
-<li>Draft an OSM standard for sidewalk representation and annotation</li>
-<li>Put standard into practice on a private server for trial purposes prior to submission to the OSM community</li>
-<li>Manipulate data for three localities for demonstrative purposes, including 	Seattle, Denver and Savannah</li> 	
-<li>Provide tools to automate the incorporation of public municipal data into 	the OSM standard</li>
+<li>Draft an OSM standard for sidewalk representation and annotation consistent with standards for other pedestrian ways</li>
+<li>Put standard into practice on a private server for trial purposes prior to submission to the OSM community</li>  
+<li>Manipulate municipal sidewalk data for demonstrative purposes</li>     
+<li>Provide tools to automate the incorporation of public data into the OSM standard</li>
+<li>Provide tools with inclusive, intuitive interfaces for individual contribution of sidewalk data into the OSM standard</li>
 </ol>
 						</div>
 					</div>
 				</div>
 			</section>
-			
-		<!-- Three -->
+
+		<!-- Timeline -->
+			<section id="time" class="wrapper style1">
+				<div class="container">
+						<header class="major">
+						<h2>Timeline</h2></header>
+						<p>There are two phases to the proposed DSSG work, each of which represents a significant contribution to different stakeholder groups.</p>						
+				</div>
+				<div class="container" text-align="left">
+					<h4>PHASE I (Deadline: July 11)</h4>
+					<p>The DSSG will work to adapt an OSM data layer for use with sidewalk data, the group will learn what nuances in the sidewalk data impact both standardized incorporation into OSM as well as ability to route. The group will draft an OSM standard for sidewalk representation and annotation with the following objectives:<p>
+					<ol>
+					<li>Extension of the current OSM standard, focusing on innovation for pedestrian routing applications with particular attention to accessibility</li>
+					<li>Compatibility with existing sidewalk data, as well as extensibility for manually added and municipally collected sidewalk data</li>
+					<li>Data sharing - Facilitate importing and exporting of data through simple, clear standards for annotation</li>
+					<li>Extended sidewalk data, in order to enable:
+						<ol>
+						<li>Routing - Facilitate pedestrian routing with support for classes of different accessibility features</li>
+						<li>Basic visual map display - Support meaningful visual interpretations of pedestrian data (ideally with existing rendering software) by capturing key features in a standardized format</li>
+						<li>Annotation of significant accessibility features:
+							<ol>
+							<li>Terrain - Support annotation of incline grade that is compatible with OSM standards and accessibility needs</li>
+							<li>Junction views - Support detailed annotation of intersections and crossings of pedestrian ways</li>
+							<li>3D objects, landmarks, points of interest - Support detailed annotations of objects in and features of pedestrian ways</li>
+							</ol></li>
+						</ol></li>
+					</ol>
+				</div>
+				<div class="container" text-align="left">
+					<h4>PHASE II (Deadline: August 12)</h4>
+					<p>The DSSG team will design and implement prototype tools to import sidewalk data from existing datasets and manual annotation.  These tools must support recognition of potential conflicts between newly imported and existing pedestrian OSM data in order to facilitate supervised integration of new sidewalk information. Specifically, the DSSG team aims to build:<p>
+					<ol>
+					<li>Tool(s) to facilitate users’ annotation of pedestrian ways, supporting:
+						<ol>
+						<li>GPS-based mapping of pedestrian ways with endpoints indicated by users</li>
+						<li>Labeling of significant pedestrian features (as described above)</li>
+						</ol></li>
+					<li>Tool(s) to facilitate importing of pedestrian way data from public sources, including:
+						<ol>
+						<li>Supporting bulk import of pedestrian data from standard formats (e.g., geojson, shapefiles, KML)</li>
+						<li>Testing (of both the data specification and tool) by incorporating data from multiple municipalities into a private OSM layer</li>
+						</ol></li>
+					</ol>
+				</div>
+			</section>
+		
+		<!-- Terminology -->
+			<section id="terms" class="wrapper style2">
+				<div class="container margin-bottom-40">
+					<header class="major">
+						<h2>Terminology</h2>
+						<p>We attempt to use terminology consistent with OSM’s language for pedestrian ways.  We use “sidewalks” to delineate pedestrian-accessible footways associated with larger streets.  Our standard applies to the broader category of “pedestrian ways” or a “pedestrian network,” which includes all paths, sidewalks, crossings, and other routes that are accessible by foot or with the use of assistive devices, regardless of accessibility by other forms of transportation.</p>
+				</div>
+			</section>
+
+		<!-- Team Members -->
 			<section id="three" class="wrapper style1">
 				<div class="container">
 					<header class="major">

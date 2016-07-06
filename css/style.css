@@ -102,6 +102,23 @@
 		line-height: 1.5em;
 	}
 
+	ol {
+    padding-left: 10px;
+	    text-align: left;
+	}
+
+	ol ol{
+	    padding-left: 20px;
+	    text-align: left;
+	    list-style-type: lower-roman;
+	}
+
+	ol ol ol{
+	    padding-left: 30px;
+	    text-align: left;
+	    list-style-type: lower-alpha;
+	}
+
 	sub {
 		font-size: 0.8em;
 		position: relative;
