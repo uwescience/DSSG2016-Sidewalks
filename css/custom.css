@@ -1,0 +1,10 @@
+#banner .inner img{margin-bottom:20px;}
+#banner .button {
+    background: #337ab7;
+    background: rgba(0, 0, 0, 0.5);
+    border-color: white !important;
+    color: #ffffff !important;
+}
+#banner .button:hover {
+    background-color: rgba(51, 122, 183, 0.8);
+    } 
