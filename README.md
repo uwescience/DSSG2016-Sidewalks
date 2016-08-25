@@ -1,4 +1,5 @@
 # DSSG2016-Sidewalks
 Open Sidewalks Project Repo
 
-Project website: (https://uwescience.github.io/DSSG2016-Sidewalks/)
+Project website: (http://opensidewalks.com)
+New Github Organization: (https://github.com/OpenSidewalks)
