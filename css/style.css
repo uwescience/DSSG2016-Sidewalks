@@ -1379,7 +1379,12 @@
 			display: inline-block;
 			margin: 0;
 		}
-
+/* Logos */
+	.major.logos a{
+		padding:0 10px;
+		text-align:center;
+		border-bottom:none;
+	}
 /* Footer */
 
 	#footer {
